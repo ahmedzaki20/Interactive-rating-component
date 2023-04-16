@@ -1,0 +1,145 @@
+/* Global rulse */
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --fontSize: 15px;
+}
+body {
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+input,
+img,
+button,
+span {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+button {
+  width: 100%;
+  border: none;
+  font: inherit;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--fontSize);
+  color: var(--White);
+  background-color: var(--VeryDarkBlue);
+}
+/* Main style */
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section div.card {
+  width: 410px;
+  height: 365px;
+  padding: 30px;
+  background-color: #1f2630;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+section div.card .icon {
+  margin-bottom: 20px;
+  margin-left: 14px;
+}
+section div.card > h1 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 27px;
+}
+section div.card > p {
+  margin-bottom: 14px;
+  color: var(--MediumGrey);
+}
+section div.card .rates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section div.card .rates a {
+  padding: 11px;
+  width: 42px;
+  background: #262d37;
+  border-radius: 50%;
+  text-align: center;
+}
+section div.card .rates a:hover {
+  background-color: var(--LightGrey);
+}
+section div.card .rates a.selected {
+  background-color: var(--Orange);
+}
+section div.card input[type='submit'] {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 7px;
+  text-transform: uppercase;
+  background-color: var(--Orange);
+  color: white;
+}
+
+section div.card input[type='submit']:active {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+section div.card:last-of-type {
+  text-align: center;
+  display: none;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+section div.card:last-of-type .outOfFive {
+  width: fit-content;
+  margin: 20px auto;
+  background: #262d37;
+  border-radius: 12px;
+  font-size: 10px;
+  padding: 10px;
+  width: 45%;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  color: var(--Orange);
+}
